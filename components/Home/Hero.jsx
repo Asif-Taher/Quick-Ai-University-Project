@@ -3,9 +3,11 @@ import React from 'react';
 const Hero = () => {
   return (
     <div
-      className="bg-cover bg-center h-[600px] w-full flex items-center justify-center"
+      className="bg-cover container bg-center h-[600px] w-full flex items-center justify-center"
       style={{ backgroundImage: "url('/assets/gradientBackground.png')" }}
     >
+      <div className='w-[80%]'>
+
      <div className="text-center px-4 py-12">
   <h2 className="text-4xl md:text-6xl font-semibold mx-auto max-w-3xl leading-tight">
     Create amazing content <br />
@@ -25,6 +27,7 @@ const Hero = () => {
     </button>
   </div>
 </div>
+ </div>
 
     </div>
   );
