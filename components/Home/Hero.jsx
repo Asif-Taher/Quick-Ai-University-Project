@@ -3,7 +3,7 @@ import React from 'react';
 const Hero = () => {
   return (
     <div
-      className="bg-cover container bg-center h-[600px] w-full flex items-center justify-center"
+      className="bg-cover container bg-center h-[600px] w-full flex items-center justify-center mx-auto"
       style={{ backgroundImage: "url('/assets/gradientBackground.png')" }}
     >
       <div className='w-[80%]'>

@@ -29,7 +29,7 @@ const Testimonial = () => {
     console.log(dummyTestimonialData)
 
     return (
-        <div className='w-[80%] mx-auto'>
+        <div className='w-[80%] mx-auto mt-[80px]'>
             <Title title="Loved by Creators" subtitle="Don't just take our word for it. Here's what our 
 users are saying."></Title>
 
