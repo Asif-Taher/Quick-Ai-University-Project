@@ -9,7 +9,7 @@ const Nav = () => {
   return (
     <div className="bg-blue-300 h-24 w-full flex justify-center items-center">
       <div className="w-[80%] mx-auto flex justify-between items-center">
-        <div>
+        <div className="">
           <Image
             src={logo}
             alt="logo"
