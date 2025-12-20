@@ -4,7 +4,7 @@ import logo from "@/public/assets/logo.svg";
 const Footer = () => {
   return (
     <div className="w-full bg-gray-100 mt-28 py-20">
-      <div className="w-[80%] flex justify-between items-center mx-auto">
+      <div className="w-[80%] flex flex-col sm:flex-row justify-between items-center mx-auto">
         <div className="flex flex-col gap-2.5 max-w-xs">
           <Image src={logo} alt="logo" width={180} height={60}></Image>
           <p>
@@ -13,8 +13,8 @@ const Footer = () => {
             generate images, and enhance your workflow.
           </p>
         </div>
-        <div className="flex justify-between items-center gap-8">
-            <div className="flex flex-col gap-6">
+        <div className="flex flex-col sm:flex-row justify-between gap-8 sm:gap-10">
+            <div className="flex flex-col sm:items-start gap-6">
                 <h2>Company</h2>
                 <ul className="flex flex-col gap-2">
                     <li>Home</li>
@@ -26,9 +26,9 @@ const Footer = () => {
             <div className="flex flex-col gap-6">
                 <h2>Subscribe to our newsletter</h2>
                 <p>The latest news, articles, and resources, sent to your inbox weekly.</p>
-                <div>
-                    <input type="text" />
-                    <button>Subscribe</button>
+                <div className="flex items-stretch">
+                    <input type="text" className="border border-solid border-gray-300 rounded-l-md px-4 py-2 inline-block"/>
+                    <button className="bg-black text-white px-4 py-2 rounded-r-md">Subscribe</button>
                 </div>
             </div>
         </div>
