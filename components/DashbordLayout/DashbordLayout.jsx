@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import logo from '@/public/assets/logo.svg'
 import { Menu, X } from 'lucide-react';
 import Outlet from './Outlet';
+import Sidbar from './Sidbar';
+
 
 const DashbordLayout = () => {
 
@@ -16,7 +18,12 @@ const DashbordLayout = () => {
             sidebar ? <X onClick={()=> setsidebar(false)} className='w-6 h-6 text-gray-300 sm:hidden'/> : <Menu onClick={()=> setsidebar(true)} className='h-6 w-6 text-gray-300 sm:hidden'/>
         }
      </nav>
-     <Outlet />
+     <div className='flex-1 w-full flex h-100vh'>
+        <Sidbar sidebar={sidebar} setsidebar={setsidebar} />
+        <div className='flex-1 bg-[#f4f7fb]'>
+           <Outlet />
+        </div>
+     </div>
     </div>
   )
 }
